@@ -8,7 +8,7 @@
 			var xmlHttp = new XMLHttpRequest();
 			xmlHttp.onreadystatechange = function(){
 				token = this.responseText;
-				let regexp = /value\=\"([A-Za-z0-9]*)\"/ig;
+				let regexp = /value\=\"([A-Za-z0-9]{3,})\"/ig;
 				ans = regexp.exec(token);
 				token = ans[1];
 			}
@@ -18,7 +18,7 @@
 		window.onload = function(){
 			getcsrf();
 			alert(token);
-			document.getElementById("key") = token;
+			document.getElementById("key").value = token;
 		}
 	</script>
 	<form action="http://localhost/bWAPP/csrf_2.php" method="GET">
