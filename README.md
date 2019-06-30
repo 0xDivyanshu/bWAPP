@@ -8,4 +8,9 @@ Below are the POC html pages. Open them in your server and click on button to pe
 
 - Security-Level : Low
 
-    Please refer to [poc](https://github.com/divyanshu29/bWAPP/CSRF/csrf_1_low.html) for solution.
+    Please refer to [csrf_1](https://github.com/divyanshu29/bWAPP/CSRF/csrf_1_low.html) for solution.
+    
+- Security-Level : Medium
+    
+    Please refer to [csrf_1](https://github.com/divyanshu29/bWAPP/CSRF/csrf_1_medium.html) for solution.
+    
