@@ -23,3 +23,7 @@ Below are the POC html pages. Open them in your server and click on button to pe
 - Security-Level : Low
     
     Please refer to [csrf_2](https://github.com/divyanshu29/bWAPP/CSRF/csrf_2_low) for solution.
+
+- Security-Level : Medium
+
+    Please refer to [csrf_2](https://github.com/divyanshu29/bWAPP/CSRF/csrf_2_medium) for solution.
