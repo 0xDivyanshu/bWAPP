@@ -31,3 +31,17 @@ Below are the POC html pages. Open them in your server and click on button to pe
 - Security-Level : High
 
     Please refer to [csrf_2](https://github.com/divyanshu29/bWAPP/blob/master/CSRF/csrf_2_high.html) for solution.
+    
+## Cross-Site Request Forgery (Transfer Amount)
+
+- Security-Level : Low
+
+    Please refer to [csrf_3](https://github.com/divyanshu29/bWAPP/blob/master/CSRF/csrf_3_low.html) for solution.
+    
+- Security-Level : Medium
+
+    Please refer to [csrf_3](https://github.com/divyanshu29/bWAPP/blob/master/CSRF/csrf_3_medium.html) for solution.
+    
+- Security-Level : High
+
+    Please refer to [csrf_3](https://github.com/divyanshu29/bWAPP/blob/master/CSRF/csrf_3_high.html) for solution.
