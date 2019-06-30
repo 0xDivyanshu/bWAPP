@@ -45,3 +45,21 @@ Below are the POC html pages. Open them in your server and click on button to pe
 - Security-Level : High
 
     Please refer to [csrf_3](https://github.com/divyanshu29/bWAPP/blob/master/CSRF/csrf_3_high.html) for solution.
+
+# A-10 Unvalidated Redirects & Forwards
+Below are the request that should be made for Open Redirection .
+
+## Unvalidated Redirects & Forwards (1)
+
+- Security-Level : Low
+    
+    Please refer to [open_1](https://github.com/divyanshu29/bWAPP/blob/master/Open_Redirects/open_redirect_1_low) for solution.
+    
+- Security-Level : Medium
+    
+    Please refer to [open_1](https://github.com/divyanshu29/bWAPP/blob/master/Open_Redirects/open_redirect_1_medium) for solution.
+   
+- Security-Level : High
+    
+    Please refer to [open_1](https://github.com/divyanshu29/bWAPP/blob/master/Open_Redirects/open_redirect_1_high) for solution.
+    
