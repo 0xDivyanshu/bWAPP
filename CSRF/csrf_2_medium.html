@@ -11,14 +11,12 @@
 				let regexp = /value\=\"([A-za-z0-9]*)\"/ig;	<!-- Best site for regex : "https://regex101.com/r/tO4jX2/1" -->
 				ans = regexp.exec(token);
 				token = ans[1];
-				alert(token);
 			}
 			xmlHttp.open("GET","http://localhost/bWAPP/csrf_3.php",true);
 			xmlHttp.send();
 		}
 		window.onload = function() {
 			getCSRF();
-			alert(token);
 			document.getElementById("key").value = token;
 		}
 	</script>
