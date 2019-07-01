@@ -164,10 +164,38 @@ Below are the request that should be made for Open Redirection .
 
 ## HTTP Parameter Pollution
 
-- Security Level : Low
+- Security Level : Low/Medium
     
     Request To be Made:
     
     ```
     http://localhost/bWAPP/hpp-3.php?movie=1&name=admin&action=vote&movie=2
+    ```
+- Security Level : High
+
+    I don't think its possible to bypass as
+    
+    Code Snippet:
+    ```
+    // Detects multiple parameters with same name (HTTP Parameter Pollution)
+    function hpp_check_1($data)
+    {
+    $query_string  = explode("&", $data);    
+    $i = "";
+    $param = array();
+    $param_variables = array();
+    foreach($query_string as $i)
+    {
+            $param = explode("=", $i);
+            array_push($param_variables, $param[0]);
+    }
+    $count_unique = count(array_unique($param_variables));
+    $count_total = count($param_variables);
+    $hpp_detected = "";
+    if($count_unique < $count_total)
+    {
+        $hpp_detected = "<font color=\"red\">HTTP Parameter Pollution detected!</font>";
+    }
+    return $hpp_detected;
+    }
     ```
