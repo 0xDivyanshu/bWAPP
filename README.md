@@ -52,6 +52,17 @@ Below are the request that should be made for Open Redirection .
 ## Unvalidated Redirects & Forwards (1)
 
 - Security-Level : Low
+    Code Snippet :
+    ```
+    if(isset($_REQUEST["url"]) && ($_COOKIE["security_level"] != "1" && $_COOKIE["security_level"] != "2")){
+    // Debugging
+    // echo $_REQUEST["url"];
+    
+    header("Location: " . $_REQUEST["url"]);
+
+    exit;
+    }
+    ```
     
     Please refer to [open_1](https://github.com/divyanshu29/bWAPP/blob/master/Open_Redirects/open_redirect_1_low) for solution.
     
