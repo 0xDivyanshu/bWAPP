@@ -68,7 +68,28 @@ Below are the request that should be made for Open Redirection .
     Please refer to [open_1](https://github.com/divyanshu29/bWAPP/blob/master/Open_Redirects/open_redirect_1_low) for solution.
     
 - Security-Level : Medium
-    
+
+    Code Snippet:
+    ```
+        switch($_REQUEST["url"])
+        {
+        case "1" :
+            header("Location: http://itsecgames.blogspot.com");
+            break;
+        case "2" :
+            header("Location: http://www.linkedin.com/in/malikmesellem");
+            break;
+        case "3" :
+            header("Location: http://twitter.com/MME_IT");
+            break;
+        case "4" :
+            header("Location: http://www.mmeit.be/en");
+            break;
+        default :
+            header("Location: login.php");
+            break;
+        }
+    ```
     Please refer to [open_1](https://github.com/divyanshu29/bWAPP/blob/master/Open_Redirects/open_redirect_1_medium) for solution.
    
 - Security-Level : High
