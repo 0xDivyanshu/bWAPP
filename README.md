@@ -3,7 +3,7 @@ Some bWAPP solutions :)
 # A1 - Injection
 Below are the html form tags that should be entered in the username.
 
-## HTML Injection - Reflected (GET)
+## HTML Injection - Reflected (GET/POST)
 
 - Security-Level : Low
 
