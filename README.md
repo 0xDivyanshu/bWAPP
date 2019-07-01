@@ -160,3 +160,14 @@ Below are the request that should be made for Open Redirection .
     
     Please refer to [open_2](https://github.com/divyanshu29/bWAPP/blob/master/Open_Redirects/open_redirect_2_medium) for solution.
     
+# Other Bugs
+
+## HTTP Parameter Pollution
+
+- Security Level : Low
+    
+    Request To be Made:
+    
+    ```
+    http://localhost/bWAPP/hpp-3.php?movie=1&name=admin&action=vote&movie=2
+    ```
