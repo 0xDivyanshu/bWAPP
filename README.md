@@ -52,6 +52,7 @@ Below are the request that should be made for Open Redirection .
 ## Unvalidated Redirects & Forwards (1)
 
 - Security-Level : Low
+
     Code Snippet :
     ```
     if(isset($_REQUEST["url"]) && ($_COOKIE["security_level"] != "1" && $_COOKIE["security_level"] != "2")){
