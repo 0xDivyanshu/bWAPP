@@ -32,9 +32,10 @@ Below are the html form tags that should be entered in the username.
     return htmlspecialchars($data, ENT_QUOTES, $encoding);
     }
     ```
-    
 ## HTML Injection - Reflected (URL)
-
+ 
+ - Security Level : Low/High/Medium
+ 
     I haven't done this as it wont run on Firefox only compatible version is of IE. Niether Chromium,Chrome nor Firefox would work.Look [here](http://penthusiasts.blogspot.com/2013/12/bwapp-html-injection-all.html) for methods.
     
   
