@@ -173,7 +173,7 @@ Below are the request that should be made for Open Redirection .
     ```
 - Security Level : High
 
-    I don't think its possible to bypass as
+    I don't think its possible to bypass as such but if you think you can please go for PR.
     
     Code Snippet:
     ```
