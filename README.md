@@ -133,7 +133,7 @@ Below are the request that should be made for Open Redirection .
     }
     ```
     
-    Please refer to [open_2](https://github.com/divyanshu29/bWAPP/blob/master/Open_Redirects/open_redirect_2_medium) for solution.
+    Not possible to bypass as per me but if you feel so feel free for PR.
     
 # Other Bugs
 
