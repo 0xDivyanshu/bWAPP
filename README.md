@@ -146,3 +146,17 @@ Below are the request that should be made for Open Redirection .
     ```
     
     Please refer to [open_2](https://github.com/divyanshu29/bWAPP/blob/master/Open_Redirects/open_redirect_2_low) for solution
+
+- Security Level : Medium/High
+
+    Code Snippet:
+    ```
+    if(isset($_REQUEST["ReturnUrl"]) && ($_COOKIE["security_level"] == "1" || $_COOKIE["security_level"] == "2"))
+    {
+    header("Location: portal.php");
+    exit;
+    }
+    ```
+    
+    Please refer to [open_2](https://github.com/divyanshu29/bWAPP/blob/master/Open_Redirects/open_redirect_2_medium) for solution.
+    
